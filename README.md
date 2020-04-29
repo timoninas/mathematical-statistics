@@ -1,2 +1,25 @@
-# mathematical-statistics
-Mathematical statistics 6 semester in bmstu
+# Математическая статистика; МГТУ; 6 семестр
+
+## Домашние задания
+| :1234: | Описание |  Отчет | :information_source: |
+| --- | --- | --- | --- |
+| :one: | ДЗ1 | [Отчет]() | :negative_squared_cross_mark: |
+| :two: | ДЗ2 | [Отчет]() | :negative_squared_cross_mark: |
+
+## Лабораторные работы
+
+| :1234: | Описание | Код | Отчет | :information_source: |
+| --- | --- | --- | --- | --- |
+| :one: | ЛР1 | [Код]() | [Отчет]() | :negative_squared_cross_mark: |
+| :two: | ЛР2 | [Код]() | [Отчет]() | :negative_squared_cross_mark: |
+| :three: | ЛР3 | [Код]() | [Отчет]() | :negative_squared_cross_mark: |
+
+## Рубежные контроли
+
+| :1234: | Описание | Отчет | :information_source: |
+| --- | --- | --- | --- |
+| :one: | РК1 | [Отчет]() | :negative_squared_cross_mark: |
+| :one: | РК2 | [Отчет]() | :negative_squared_cross_mark: |
+
+:white_check_mark::negative_squared_cross_mark:
+
