@@ -1,0 +1,178 @@
+\documentclass[12pt, a4paper]{report}
+\usepackage[utf8x]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[english,russian]{babel}
+
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{color}
+
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\usepackage{url}
+\usepackage{flowchart}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage[
+bookmarks=true, colorlinks=true, unicode=true,
+urlcolor=black,linkcolor=black, anchorcolor=black,
+citecolor=black, menucolor=black, filecolor=black,
+]{hyperref}
+
+\DeclareGraphicsExtensions{.pdf,.png,.jpg,.svg}
+\usetikzlibrary{shapes, arrows}
+
+\usepackage{pgfplotstable}
+
+\renewcommand\contentsname{Содержание}
+
+\usepackage{geometry}
+\geometry{left=3cm}
+\geometry{right=1cm}
+\geometry{top=2cm}
+\geometry{bottom=2cm}
+
+\lstset{ %
+language=Lisp,                 % выбор языка для подсветки (здесь это С)
+basicstyle=\small\sffamily, % размер и начертание шрифта для подсветки кода
+numbers=left,               % где поставить нумерацию строк (слева\справа)
+numberstyle=\tiny,           % размер шрифта для номеров строк
+stepnumber=1,                   % размер шага между двумя номерами строк
+numbersep=-5pt,                % как далеко отстоят номера строк от         подсвечиваемого кода
+backgroundcolor=\color{white}, % цвет фона подсветки - используем         \usepackage{color}
+showspaces=false,            % показывать или нет пробелы специальными     отступами
+showstringspaces=false,      % показывать или нет пробелы в строках
+showtabs=false,             % показывать или нет табуляцию в строках
+frame=single,              % рисовать рамку вокруг кода
+tabsize=2,                 % размер табуляции по умолчанию равен 2 пробелам
+captionpos=t,              % позиция заголовка вверху [t] или внизу [b] 
+breaklines=true,           % автоматически переносить строки (да\нет)
+breakatwhitespace=false, % переносить строки только если есть пробел
+escapeinside={\%*}{*)},   % если нужно добавить комментарии в коде
+keywordstyle=\color{blue}\ttfamily,
+stringstyle=\color{red}\ttfamily,
+commentstyle=\color{green}\ttfamily,
+morecomment=[l][\color{magenta}]{\#},
+columns=fullflexible }
+
+\usepackage{titlesec, blindtext, color}
+\setcounter{secnumdepth}{-1}
+\titleformat{\chapter}[hang]{\LARGE\bfseries}{}{0pt}{\LARGE\bfseries}
+\titleformat{\section}{\bfseries\Large}{}{-1cm}{\centering}
+\titleformat{\subsection}{\bfseries\normalsize}{}{-1cm}{\centering}
+
+
+
+\begin{document}
+
+  \begin{titlepage}
+  	
+  	\begin{table}[H]
+  		\centering
+  		\footnotesize
+  		\begin{tabular}{cc}
+  			\multirow{8}{*}{\includegraphics[scale=0.35]{img/bmstu.jpg}}
+  			& \\
+  			& \\
+  			& \textbf{Министерство науки и высшего образования Российской Федерации} \\
+  			& \textbf{Федеральное государственное бюджетное образовательное учреждение} \\
+  			& \textbf{высшего образования} \\
+  			& \textbf{<<Московский государственный технический} \\
+  			& \textbf{университет имени Н.Э. Баумана>>} \\
+  			& \textbf{(МГТУ им. Н.Э. Баумана)} \\
+  			& \textbf{} \\
+  		\end{tabular}
+  	\end{table}
+  	
+  	\vspace{-2.5cm}
+  	
+  	\begin{flushleft}
+  		\rule[-1cm]{\textwidth}{3pt}
+  		\rule{\textwidth}{1pt}
+  	\end{flushleft}
+  	
+  	\begin{flushleft}
+  		\small
+  		ФАКУЛЬТЕТ
+  		\underline{<<Информатика и системы управления>>\ \ \ \ \ \ \ 
+  			\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+  			\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ } \\
+  		КАФЕДРА
+  		\underline{<<Программное обеспечение ЭВМ и
+  			информационные технологии>>
+  			\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+  	\end{flushleft}
+  	
+  	\vspace{2cm}
+  	
+  	\begin{center}
+  		\textbf{Домашняя работа № 1} \\
+  		\vspace{0.5cm}
+  		\textbf{Вариант 22}
+  	\end{center}
+  	
+  	\vspace{4cm}
+  	
+  	\begin{flushleft}
+  		\begin{tabular}{ll}
+  			\textbf{Дисциплина} & Математическая статистика. \\
+  			\textbf{Тема} & \\
+  			\textbf{Студент} & Тимонин А. С. \\
+  			\textbf{Группа} & ИУ7-62Б \\
+  			\textbf{Оценка (баллы)} & \\
+  			\textbf{Преподаватель} & Власов П.А. \\
+  		\end{tabular}
+  	\end{flushleft}
+  	
+  	\vspace{6cm}
+  	
+  	\begin{center}
+  		Москва, 2020 г.
+  	\end{center}
+  	
+  	
+  \end{titlepage}
+  
+	
+	\section{ЗАДАЧА 1}
+	
+	\hspace{1cm} Известно, что 80\% изготовленных заводом электроламп выдерживают гарантийный срок службы. Найти вероятность того, что в партии из 500 электроламп число выдержавших гарантийный срок службы находится в пределах от 380 до 420. Использовать неравенство Чебышева и интегральную теорему Муавраз-Лапласа.
+	
+	\subsection{Неравенство Чебышева}
+	
+	Пусть
+	
+	\begin{itemize}
+		\item $X$ - случайная величина
+		\item $\exists MX,\ \exists DX$
+	\end{itemize}
+
+	Тогда
+	
+	\begin{equation*}
+	\forall \varepsilon > 0, P\{ |X - MX| \geq \varepsilon \} \le \frac{DX}{\varepsilon^2}
+	\end{equation*}
+	
+	
+	\subsection{Центральная теорема Муавра-Лапласа}
+	
+	    Пусть
+	
+	\begin{enumerate}
+		\item Проводится большое число испытаний по схеме Бернулли с вероятностью успеха p;
+		\item k - число успехов этой серии.
+	\end{enumerate}
+
+	Тогда
+	
+	\begin{equation*}
+	P\{ k_1 \le k \le k_2 \} = \Phi(x_2) - \Phi(x_1)
+%	\forall \varepsilon > 0, P\{ |X - MX| \geq \varepsilon \} \le \frac{DX}{\varepsilon^2}
+	\end{equation*}
+	
+	где $x_i$ = $\frac{k_i - np}{\sqrt{npq}}$, $i = \overline{1;2}$ , $q = 1 - p$
+	
+
+\end{document}
