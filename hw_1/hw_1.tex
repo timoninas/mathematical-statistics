@@ -29,10 +29,12 @@ citecolor=black, menucolor=black, filecolor=black,
 \renewcommand\contentsname{Содержание}
 
 \usepackage{geometry}
-\geometry{left=3cm}
-\geometry{right=1cm}
-\geometry{top=2cm}
-\geometry{bottom=2cm}
+\geometry{top=15mm}
+\geometry{right=15mm}
+\geometry{left=15mm}
+\geometry{bottom=20mm}
+\geometry{ignorefoot}
+
 
 \lstset{ %
 language=Lisp,                 % выбор языка для подсветки (здесь это С)
@@ -144,10 +146,10 @@ columns=fullflexible }
 	
 	Пусть
 	
-	\begin{itemize}
+	\begin{enumerate}
 		\item $X$ - случайная величина
 		\item $\exists MX,\ \exists DX$
-	\end{itemize}
+	\end{enumerate}
 
 	Тогда
 	
@@ -156,7 +158,28 @@ columns=fullflexible }
 	\end{equation*}
 	
 	
-	\subsection{Центральная теорема Муавра-Лапласа}
+	
+	\textbf{Решение}
+	
+	\begin{itemize}
+		\item $k_n$  - число успехов серии по схеме Бернулли;
+		\item Вероятность успеха $p = 0.8$;
+		\item $M[X] = np = 500 * 0.8 = 400$;
+		\item $D[X] = npq = 500 * 0.8 * 0.2 = 80$;
+	\end{itemize}
+
+
+	\begin{multline*}
+	P \{ 380 \le k_n \le 420 \} = P \{ -20 \le X - M[X] \le 20 \} = P \{ -20 \le X - 400 \le 20 \} = \\
+    P \{ |X - 400| \le 20 \} \geq 1 - \frac{D[X]}{\varepsilon^2} \geq 1 - \frac{80}{400} \geq 1 - 0.2 \geq 0.8
+	\end{multline*}
+	
+	\vspace{0.5cm}
+	\textbf{Ответ:}
+	$P \{ 380 \le k_n \le 420 \}$ = 0.8
+	
+	
+	\vspace{0.5cm}\subsection{Центральная теорема Муавра-Лапласа}
 	
 	    Пусть
 	
@@ -173,6 +196,69 @@ columns=fullflexible }
 	\end{equation*}
 	
 	где $x_i$ = $\frac{k_i - np}{\sqrt{npq}}$, $i = \overline{1;2}$ , $q = 1 - p$
+	
+	
+	\vspace{0.2cm}
+	\textbf{Решение}
+	
+	\begin{enumerate}
+		\item n = 500;
+		\item Вероятность успеха $p = 0.8$;
+		\item Вероятность неудачи $q = 0.2$;
+		\item $k_1 = 380$, $k_2 = 420$;
+	\end{enumerate}
+	
+	\vspace{0.5cm}
+	
+	\begin{equation*}
+	x_1 = \frac{380 - 500 * 0.8}{\sqrt{500 * 0.8 * 0.2}} \approx -2.2361
+	\end{equation*}
+	
+	\vspace{0.2cm}
+	\begin{equation*}
+	x_2 = \frac{420 - 500 * 0.8}{\sqrt{500 * 0.8 * 0.2}} \approx 2.2361
+	\end{equation*}
+	
+	\vspace{0.7cm}
+	
+	\begin{equation*}
+	P\{ 380 \le k \le 420 \} = \Phi(2.2361) + \Phi(2.2361) = 2*\Phi(2.2361) =  2 * 0.4873 = 0.9746
+	\end{equation*}
+	
+	\vspace{0.5cm}
+	\textbf{Ответ:}
+	$P\{ 380 \le k \le 420 \} \approx 0.9746$
+	
+	
+	
+	
+	
+	
+	\newpage
+	
+	\section{ЗАДАЧА 2}
+	
+	\hspace{1cm}
+	С использованием метода моментов для случайной выборки $X = (X_1, ..., X_n)$ из генеральной совокупности X найти точечные оценки указанных параметров заданного закона распеделения.
+	
+	\vspace{0.5cm}
+	\textbf{Закон распределения}
+	
+	\begin{equation*}
+	f_X(x) = \frac{\Theta^5}{4!}  x^4  e^\Theta x, x > 0
+	\end{equation*}
+	
+	\textbf{Выборка $\vec x_5$}
+	
+	\begin{equation*}
+	(7, 4, 11, 5, 3)
+	\end{equation*}
+	
+	\vspace{0.2cm}
+	\textbf{Решение}
+	
+	\vspace{0.5cm}
+	\textbf{Ответ:}
 	
 
 \end{document}
