@@ -3,7 +3,7 @@
 ## Домашние задания
 | :1234: | Описание |  Отчет | :information_source: |
 | --- | --- | --- | --- |
-| :one: | ДЗ1 | [Отчет]() | :negative_squared_cross_mark: |
+| :one: | ДЗ1 | [Отчет](https://github.com/timoninas/mathematical-statistics/blob/master/hw_1/hw_1.pdf) | :negative_squared_cross_mark: |
 | :two: | ДЗ2 | [Отчет]() | :negative_squared_cross_mark: |
 
 ## Лабораторные работы
