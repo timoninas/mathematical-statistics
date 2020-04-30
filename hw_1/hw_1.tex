@@ -311,7 +311,7 @@ columns=fullflexible }
 	\textbf{Закон распределения}
 	
 	\begin{equation*}
-	f_X(x) = \frac{\Theta^5}{4!}  x^4  e^\Theta x, x > 0
+	f_X(x) = \frac{\theta^5}{4!}  x^4  e^{-\theta x}, x > 0
 	\end{equation*}
 	
 	\textbf{Выборка $\vec x_5$}
@@ -323,8 +323,43 @@ columns=fullflexible }
 	\vspace{0.2cm}
 	\textbf{Решение}
 	
+	\begin{equation*}
+	L(\vec{X}, \vec{\theta}) = f(X_1, \vec{\theta}) \cdot ... \cdot f(X_n, \vec{\theta}) = \frac{\theta^{5n}}{4! \cdot n} \cdot (X_1 \cdot ... \cdot X_n)^4 \cdot e^{(-X_1 \cdot \theta)  + ... +(-X_n \cdot \theta) } )
+	\end{equation*}
+	
+	\begin{equation*}
+	\ln{L} = 5n \ln{\theta} - \ln{(4! \cdot n)} +  4 \cdot \ln{(X_1 \cdot ... \cdot X_n)} - \theta \cdot (X_1 + ... + X_n)
+	\end{equation*}
+	
+	Воспользуемся необходимым условием экстремума
+	
+	\begin{equation*}
+	\frac{\partial \ln L}{\partial \theta} = \frac{5n}{\theta} - (X_1 + ... + X_n) = 0
+	\end{equation*}
+	
+	\begin{equation*}
+	(X_1 + ... + X_n) = \frac{5n}{\theta}
+	\end{equation*}
+	
+	\begin{equation*}
+	\theta = \frac{5n}{(X_1 + ... + X_n)}
+	\end{equation*}
+	
+	
+	Покажем, что для найденных значений выполняются достаточные условия экстремума
+	
+	\begin{equation*}
+	\frac{\partial^2 \ln L}{\partial^2 \theta} = -\frac{5n}{\theta^2} = -(X_1 + ... + X_n) < 0
+	\end{equation*}
+	
+	Подставим выборку $\vec x_5$
+	
+	\begin{equation*}
+	\theta = \frac{5 \cdot 5}{7 + 4 + 11 + 5 + 3} = 0.8(33)
+	\end{equation*}
+	
 	\vspace{0.5cm}
-	\textbf{Ответ:}
+	\textbf{Ответ:} 0.8(33)
 	
 	
 	
