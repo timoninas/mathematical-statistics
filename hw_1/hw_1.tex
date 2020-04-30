@@ -144,7 +144,7 @@ columns=fullflexible }
 	
 	\subsection{Неравенство Чебышева}
 	
-	Пусть
+	\hspace{0.6cm}Пусть
 	
 	\begin{enumerate}
 		\item $X$ - случайная величина
@@ -181,7 +181,7 @@ columns=fullflexible }
 	
 	\vspace{0.5cm}\subsection{Центральная теорема Муавра-Лапласа}
 	
-	    Пусть
+	\hspace{0.6cm}Пусть
 	
 	\begin{enumerate}
 		\item Проводится большое число испытаний по схеме Бернулли с вероятностью успеха p;
@@ -241,6 +241,72 @@ columns=fullflexible }
 	\hspace{1cm}
 	С использованием метода моментов для случайной выборки $X = (X_1, ..., X_n)$ из генеральной совокупности X найти точечные оценки указанных параметров заданного закона распеделения.
 	
+	
+	\vspace{0.5cm}
+	\textbf{Закон распределения}
+	
+	\begin{equation*} 
+	f_X(x) = \frac{1}{4^\theta \Gamma(\theta)}  x^{\theta - 1} e^{\frac{-x}{4}}, \;  x > 0
+	\end{equation*}
+	
+	
+	\vspace{0.2cm}
+	\textbf{Решение}
+	
+	
+	\vspace{0.2cm}
+	1. Закон распределения является гаммой-функцией 
+	\begin{equation*} 
+	G_{k, \theta}(x) = x^{k-1} \frac{e^{\frac{-x}{\theta}}}{\Gamma(k)\theta^k} \Rightarrow k = \theta,\; \theta = 4
+	\end{equation*} 
+	
+	\begin{equation*} 
+	G_{\theta, 4}(x) = x^{\theta-1} \frac{e^{\frac{-x}{4}}}{\Gamma(\theta)4^\theta} 
+	\end{equation*} 
+	
+	Тогда математическое ожидание и десперсию можно найти по формулам 
+	
+	\begin{equation*} 
+	 M[G_{k ,\theta}] = k \theta
+	\end{equation*} 
+	
+	\begin{equation*} 
+	D[G_{k ,\theta}] = k \theta^2
+	\end{equation*} 
+	
+	Найдем математическое ожидание и дисперсию
+	
+	\begin{equation*} 
+	M[G_{\theta ,4}] =  4 * \theta
+	\end{equation*}  
+	
+	\begin{equation*} 
+	D[G_{\theta ,4}] = 16 * \theta
+	\end{equation*}  
+	
+	
+	\vspace{0.2cm}
+	2. Приравняем теоретические моменты к их выборочным аналогам
+	
+	\begin{equation*} 
+	4 \theta = \overline{X} \Rightarrow \theta = \frac{\overline{X}}{4}
+	\end{equation*}  
+	
+	\begin{equation*} 
+	\overline{X} = \frac{1}{n} \sum_{i=1}^n X_i
+	\end{equation*} 
+	
+	\vspace{0.5cm}
+	\textbf{Ответ:} $\theta = \frac{\overline{X}}{4}$
+	
+
+	
+	\newpage
+	
+	\section{ЗАДАЧА 3}
+	
+	\hspace{1cm} С использованием метода максимального правдоподобия для случайно выборки $\vec{X} = (X_1, ..., X_n)$ из генеральной совокупности X найти точечные оценки параметров заданного закона распределения. Вычислить выборочные значения найденных оценок для выборки $\vec{x}_5 = (x_1, ..., x_5)$.
+	
 	\vspace{0.5cm}
 	\textbf{Закон распределения}
 	
@@ -253,6 +319,32 @@ columns=fullflexible }
 	\begin{equation*}
 	(7, 4, 11, 5, 3)
 	\end{equation*}
+	
+	\vspace{0.2cm}
+	\textbf{Решение}
+	
+	\vspace{0.5cm}
+	\textbf{Ответ:}
+	
+	
+	
+	
+	
+	
+	
+	
+	\newpage
+	
+	\section{ЗАДАЧА 4}
+	
+	\hspace{0.4cm} После $n = 8$ измерений давления в баке с горючим получены следующие результаты:
+	
+	\begin{equation*}
+	3.25,\; 2.82,\; 3.07,\; 3.12,\; 2.93,\; 2.87,\; 3.09,\; 3.17.
+	\end{equation*}
+	
+	Считая ошибки измерений подчиненными номральному закону, построить 90\%-ные доверительные интервалы для математического ожидания и среднего квадратичного отклонения давления в баке.
+	
 	
 	\vspace{0.2cm}
 	\textbf{Решение}
