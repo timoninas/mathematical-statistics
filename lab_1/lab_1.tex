@@ -37,7 +37,7 @@ citecolor=black, menucolor=black, filecolor=black,
 
 
 \lstset{ %
-	language=Lisp,                 % выбор языка для подсветки (здесь это С)
+	language=Matlab,                 % выбор языка для подсветки (здесь это С)
 	basicstyle=\small\sffamily, % размер и начертание шрифта для подсветки кода
 	numbers=left,               % где поставить нумерацию строк (слева\справа)
 	numberstyle=\tiny,           % размер шрифта для номеров строк
@@ -138,7 +138,8 @@ citecolor=black, menucolor=black, filecolor=black,
 	\end{titlepage}
 	
 	
-	\section{Формулы для вычисления}
+	\section{Теоретическая часть}
+	\subsection{Формулы для вычисления}
 	
 	\hspace{0.7cm}\textbf{Для генеральной совокупности $\vec{x} = {(x_1, \dots, x_n)}$}
 	
@@ -172,7 +173,8 @@ citecolor=black, menucolor=black, filecolor=black,
 	S^2 = \frac{1}{n-1} \sum_{i=1}^n (x_i - \overline{x})^2
 	\end{equation*}
 	
-	\section{Определение имперической плотности и гистограммы}
+	\vspace{0.5cm}
+	\subsection{Определение эмперической плотности и гистограммы}
 	
 	\hspace{0.5cm} \textbf{Интервальный статистический ряд}
 	
@@ -225,7 +227,123 @@ citecolor=black, menucolor=black, filecolor=black,
 	\textbf{\underline{Опр} Гистограммой} называют график эмпирической плотности
 	
 	
-	\section{Определение имперической плотности и гистограммы}
+	\vspace{0.5cm}
+	\subsection{Определение эмперической функции распределения}
 	
+	\hspace{0.5cm}
+	
+	\textbf{\underline{Опр} Эмпирической функцией распределения} называют функцию
+	
+	\begin{equation*}
+	\mathcal{F}_n: \mathcal{R} \to \mathcal{R}
+	\end{equation*}
+	
+	\hspace{1cm} определенную условием
+	
+	\begin{equation*}
+		\hat F(x, \vec{x}) = \frac{n(x, \vec{x})}{n}
+	\end{equation*}
+	
+	
+	\newpage
+	
+	\section{Практическая часть}
+	
+	\subsection{Листинги программы}
+	\begin{lstlisting}[caption=Содержимое генеральной совокупности X]
+	7.76, 5.96, 4.58, 6.13, 5.05,
+	6.40, 7.46, 5.55, 5.01, 3.79,
+	7.65, 8.87, 5.94, 7.25, 6.76,
+	6.92, 6.68, 4.89, 7.47, 6.53,
+	6.76, 6.96, 6.58, 7.92, 8.47,
+	6.27, 8.05, 5.24, 5.60, 6.69,
+	7.55, 6.02, 7.34, 6.81, 7.22, 
+	6.39, 6.40, 8.28, 5.39, 5.68, 
+	6.71, 7.89, 5.69, 5.18, 7.84, 
+	7.18, 7.54, 6.04, 4.58, 6.82, 
+	4.45, 6.75, 5.28, 7.42, 6.88, 
+	7.10, 5.24, 9.12, 7.37, 5.50, 
+	5.52, 6.34, 5.31, 7.71, 6.88, 
+	6.45, 7.51, 6.21, 7.44, 6.15, 
+	6.25, 5.59, 6.68, 6.52, 4.03, 
+	5.35, 6.53, 3.68, 5.91, 6.68, 
+	6.18, 7.80, 7.17, 7.31, 4.48, 
+	5.69, 7.11, 6.87, 6.14, 4.73, 
+	6.60, 5.61, 7.32, 6.75, 6.28, 
+	6.41, 7.31, 6.68, 7.26, 7.94, 
+	7.67, 4.72, 6.01, 5.79, 7.38, 
+	5.98, 5.36, 6.43, 7.25, 5.54, 
+	6.66, 6.47, 6.84, 6.13, 6.21, 
+	5.52, 6.33, 7.55, 6.24, 7.84
+	
+	\end{lstlisting}
+	
+	
+	\vspace{0.5cm}
+	\subsection{Результат выполнения программы}
+	
+	\begin{equation*}
+	M_{\max} = 9.12
+	\end{equation*}
+	
+	\begin{equation*}
+	M_{\min} = 3.68
+	\end{equation*}
+	
+	\begin{equation*}
+	R = 5.44
+	\end{equation*}
+	
+	\begin{equation*}
+	\mu = 6.4596
+	\end{equation*}
+	
+	\begin{equation*}
+	S^2 = 1.1013
+	\end{equation*}
+	
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{|c|c|}
+			\hline
+			$[3.68;4.36)$ & 3 \\
+			\hline
+			$[4.36;5.04)$ & 8 \\
+			\hline
+			$[5.04;5.72)$ & 20 \\
+			\hline
+			$[5.72;6.40)$ & 22 \\
+			\hline
+			$[6.40;7.08)$ & 30 \\
+			\hline
+			$[7.08;7.76)$ & 25 \\
+			\hline
+			$[7.76;8.44)$ & 9 \\
+			\hline
+			$[8.44;9.12]$ & 3 \\
+			\hline
+		\end{tabular}
+		\caption{Результаты расчетов для выборки}
+	\end{table}
+
+	\newpage
+
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.52]{img/Gistogramma.png}
+		\caption{Гистограмма}
+	\end{figure}
+
+	\newpage
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.52]{img/EmpericalFunc.png}
+		\caption{Эмпирическая функция распределения}
+	\end{figure}
+	
+	
+		
 	
 \end{document}
