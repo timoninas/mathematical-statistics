@@ -8,9 +8,10 @@
 
 ## Лабораторные работы
 
+
 | :1234: | Описание | Код | Отчет | :information_source: |
 | --- | --- | --- | --- | --- |
-| :one: | ЛР1 | [Код]() | [Отчет]() | :negative_squared_cross_mark: |
+| :one: | <ol> <li>Гистограмма</li> <li>Эмпирическая функция распределения</li>  </ol> | [Код]() | [Отчет](https://github.com/timoninas/mathematical-statistics/blob/master/lab_1/lab_1.pdf) | :negative_squared_cross_mark: |
 | :two: | ЛР2 | [Код]() | [Отчет]() | :negative_squared_cross_mark: |
 | :three: | ЛР3 | [Код]() | [Отчет]() | :negative_squared_cross_mark: |
 
