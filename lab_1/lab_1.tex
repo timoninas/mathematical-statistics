@@ -8,6 +8,7 @@
 \usepackage{color}
 
 \usepackage{amsmath}
+\usepackage{amssymb}
 \usepackage{pgfplots}
 \usepackage{url}
 \usepackage{flowchart}
@@ -141,7 +142,7 @@ citecolor=black, menucolor=black, filecolor=black,
 	\section{Теоретическая часть}
 	\subsection{Формулы для вычисления}
 	
-	\hspace{0.7cm}\textbf{Для генеральной совокупности $\vec{x} = {(x_1, \dots, x_n)}$}
+	\hspace{0.7cm}\textbf{Выборка из генеральной совокупности $\vec{x} = {(x_1, \dots, x_n)}$}
 	
 	\vspace{0.5cm}\textbf{Формула для вычисления максимального значения $M_{\max}$:}
 	
@@ -155,7 +156,7 @@ citecolor=black, menucolor=black, filecolor=black,
 	M_{\min} = \min{(x_1, \dots, x_n)}
 	\end{equation*}
 	
-	\textbf{Размах выборки R  считается по формуле:}
+	\textbf{Размах выборки R вычисляется по формуле:}
 	
 	\begin{equation*} \label{R}
 	R = M_{\max} - M_{\min}
@@ -181,14 +182,14 @@ citecolor=black, menucolor=black, filecolor=black,
 	Пусть $\vec{x}$ - выборка из генеральной совокупности X. Если объем n этой выборки велик ($n\geq50$), то значения $x_i$ группируют не только в статистический ряд, но и в так называемый \underline{интервальный статистический ряд}. Для этого отрезок $J = [x_{(1)}, x_{(n))}]$ делят на p равновеликих частей:
 	
 	\begin{equation*}
-	J_i = [a_i,a_{i+1}), i = \overline{0;p-i}
+	J_i = [a_i,a_{i+1}), i = \overline{0;p-1}
 	\end{equation*}
 	
 	\begin{equation*}
 	J_p = [a_{p-1},a_{p}]
 	\end{equation*}
 	
-	\vspace{0.5cm}где $a_i = x_{(1)} + i\Delta,\; t = \overline{0;p}, \Delta = \frac{|J|}{p} = \frac{x_{(n)} - x_{(1)}}{p}$
+	\vspace{0.5cm}где $a_i = x_{(1)} + i\Delta,\; i = \overline{0;p}, \Delta = \frac{|J|}{p} = \frac{x_{(n)} - x_{(1)}}{p}$
 	
 	\vspace{0.5cm}\textbf{\underline{Опр} Интервальным статистическим рядом} называют таблицу
 	
@@ -235,7 +236,7 @@ citecolor=black, menucolor=black, filecolor=black,
 	\textbf{\underline{Опр} Эмпирической функцией распределения} называют функцию
 	
 	\begin{equation*}
-	\mathcal{F}_n: \mathcal{R} \to \mathcal{R}
+	\mathcal{F}_n: \mathbb{R} \to \mathbb{R}
 	\end{equation*}
 	
 	\hspace{1cm} определенную условием
