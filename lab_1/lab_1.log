@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.20)  19 MAY 2020 14:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.20)  2 JUN 2020 01:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1066,100 +1066,102 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.218 ...�ирической плотностью}
-                                                   (отвечающей в�...
-[1] [2]
+l.216 	\end{enumerate}
+                       [1] [2]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 253.
+(hyperref)                be the same. Added a new anchor on input line 256.
 
-LaTeX Font Info:    Try loading font information for T2A+cmss on input line 254
+LaTeX Font Info:    Try loading font information for T2A+cmss on input line 257
 .
 (/usr/local/texlive/2019/texmf-dist/tex/latex/cyrillic/t2acmss.fd
 File: t2acmss.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
-LaTeX Font Info:    Try loading font information for T2A+cmtt on input line 283
+LaTeX Font Info:    Try loading font information for T2A+cmtt on input line 258
 .
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/cyrillic/t2acmtt.fd
 File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 ) [3]
-LaTeX Font Info:    Try loading font information for OMS+cmss on input line 332
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 327
 .
-LaTeX Font Info:    No file OMScmss.fd. on input line 332.
+LaTeX Font Info:    No file OMScmss.fd. on input line 327.
 
 
 LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textasteriskcentered' on input line 332.
+(Font)              for symbol `textasteriskcentered' on input line 327.
 
-[4] [5] [6]
-<img/Gistogramma.png, id=234, 1124.2pt x 843.15pt>
+[4] [5]
+<img/Gistogramma.png, id=162, 1124.2pt x 843.15pt>
 File: img/Gistogramma.png Graphic file (type png)
 <use img/Gistogramma.png>
-Package pdftex.def Info: img/Gistogramma.png  used on input line 470.
+Package pdftex.def Info: img/Gistogramma.png  used on input line 396.
 (pdftex.def)             Requested size: 584.58737pt x 438.44052pt.
 
-Overfull \hbox (72.43774pt too wide) in paragraph at lines 470--471
+Overfull \hbox (72.43774pt too wide) in paragraph at lines 396--397
  [][] 
  []
 
-[7 <./img/Gistogramma.png (PNG copy)>]
-<img/EmpericalFunc.png, id=240, 1124.2pt x 843.15pt>
+[6 <./img/Gistogramma.png (PNG copy)>]
+<img/EmpericalFunc.png, id=169, 1124.2pt x 843.15pt>
 File: img/EmpericalFunc.png Graphic file (type png)
 <use img/EmpericalFunc.png>
-Package pdftex.def Info: img/EmpericalFunc.png  used on input line 478.
+Package pdftex.def Info: img/EmpericalFunc.png  used on input line 404.
 (pdftex.def)             Requested size: 584.58737pt x 438.44052pt.
 
-Overfull \hbox (72.43774pt too wide) in paragraph at lines 478--479
+Overfull \hbox (72.43774pt too wide) in paragraph at lines 404--405
  [][] 
  []
 
-[8 <./img/EmpericalFunc.png (PNG copy)>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 485.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 485.
+[7 <./img/EmpericalFunc.png (PNG copy)>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 411.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 411.
  (./lab_1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 485.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 485.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 411.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 411.
 Package rerunfilecheck Info: File `lab_1.out' has not changed.
-(rerunfilecheck)             Checksum: 99E348717F6803D424E78A2B5D879A9F;1952.
+(rerunfilecheck)             Checksum: 01321045C6FBEED26E145AC6756699D0;1952.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 485.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 411.
  ) 
 Here is how much of TeX's memory you used:
- 37779 strings out of 492616
- 842894 string characters out of 6129480
- 1378813 words of memory out of 5000000
- 40942 multiletter control sequences out of 15000+600000
+ 37701 strings out of 492616
+ 841759 string characters out of 6129480
+ 1341812 words of memory out of 5000000
+ 40932 multiletter control sequences out of 15000+600000
  19137 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,15n,96p,717b,1892s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc
-}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
-</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
-/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></u
-sr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr
-/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/l
-ocal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/loca
-l/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/t
-exlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
-xlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texl
-ive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/
-texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/te
-xlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texl
-ive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texliv
-e/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/
-2019/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/20
-19/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2019
-/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/local/texlive/2019/t
-exmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on lab_1.pdf (9 pages, 376288 bytes).
+ 62i,15n,96p,717b,2455s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{lstnumber.0.1.84} has been referenced but does no
+t exist, replaced by a fixed one
+
+{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}<
+/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
+usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
+sr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr
+/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/l
+ocal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loc
+al/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/
+texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/tex
+live/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
+ive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texliv
+e/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/te
+xlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texl
+ive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texliv
+e/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/
+2019/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/20
+19/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2019
+/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2019/t
+exmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/local/texlive/2019/tex
+mf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
+Output written on lab_1.pdf (8 pages, 370370 bytes).
 PDF statistics:
- 342 PDF objects out of 1000 (max. 8388607)
- 306 compressed objects within 4 object streams
- 168 named destinations out of 1000 (max. 500000)
+ 257 PDF objects out of 1000 (max. 8388607)
+ 223 compressed objects within 3 object streams
+ 100 named destinations out of 1000 (max. 500000)
  84 words of extra memory for PDF output out of 10000 (max. 10000000)
 
