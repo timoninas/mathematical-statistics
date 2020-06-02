@@ -7,6 +7,7 @@
 \usepackage{listings}
 \usepackage{color}
 
+\usepackage{amsfonts}
 \usepackage{amsmath}
 \usepackage{pgfplots}
 \usepackage{url}
@@ -384,8 +385,120 @@ columns=fullflexible }
 	\vspace{0.2cm}
 	\textbf{Решение}
 	
+	Пусть X - случайная величина принимаюащая значения равные давлению в баке с горючим, так как
+	
+	\begin{equation*}
+	Так как X \sim \mathbb{N}(m, \sigma^2) \text{ по условию } \Rightarrow
+	\end{equation*}
+	
+	\begin{equation*}
+	T(\vec{X}, m) = \frac{m-\overline{X}}{S(\vec{X})} \sqrt{n} \sim St(n-1)
+	\end{equation*}
+	
+	\begin{equation*}
+	P \{ t_{\alpha_1} < T(\vec{X}, m) < t_{1-\alpha_2} \} = \gamma
+	\end{equation*}
+	
+	где $t_{\alpha_1}$, $t_{1 - \alpha_2}$ - квантили соотв. уровней распределения Стьюдента с $n-1 = 7$
+	
+	\begin{equation*}
+	P \{  \overline{X} - \frac{S(\vec{X}) t_{\frac{1 + \gamma}{2}}}{\sqrt{n}} < m < \overline{X} + \frac{S(\vec{X}) t_{\frac{1 + \gamma}{2}}}{\sqrt{n}}   \} = \gamma
+	\end{equation*}
+	
+	\begin{equation*}
+	\underline{m} (\vec{X}) = \overline{X} - \frac{S(\vec{X}) \frac{t_1+ \gamma}{2}}{\sqrt{n}}
+	\end{equation*}
+	
+	\begin{equation*}
+	\overline{m} (\vec{X}) = \overline{X} + \frac{S(\vec{X}) \frac{t_1+ \gamma}{2}}{\sqrt{n}}
+	\end{equation*}
+	
 	\vspace{0.5cm}
-	\textbf{Ответ:}
+	
+	\begin{equation*}
+	\textbf{а)}\; \overline{X} = 3.04
+	\end{equation*}
+	
+	\begin{equation*}
+	\textbf{б)}\; S^2(\overline{X}) = \frac{1}{n-1} \sum_{i=1}^{n}(X_i - \overline{X})^2 \approx 0.0229 \Rightarrow S(\vec{X}) = 0.1513
+	\end{equation*}
+	
+	\begin{equation*}
+	\textbf{в)}\; \frac{1+\gamma}{2} = 0.95
+	\end{equation*}
+	
+	\begin{equation*}
+	\textbf{г)}\; t_{0.95} = 1.895
+	\end{equation*}
+	
+	\begin{equation*}
+	\textbf{д)}\; \frac{S(\vec{X}) t_{\frac{1 + \alpha}{2}}{\sqrt{n}}} = \frac{0.1513  \cdot  1.895}{2.83} \approx 0.1013
+	\end{equation*}
+	
+	\begin{equation*}
+	\textbf{г)}\; \underline{m} (\vec{X}) = 3.04 - 0.1013 = 2.9387
+	\end{equation*}
+	
+	\begin{equation*}
+	\overline{m} (\vec{X}) = 3.1413 \Rightarrow m \in (2.9387; 3.1413)
+	\end{equation*}
+	
+	 \vspace{0.5cm} Так как $X \sim \mathbb{N}(m, \sigma^2)$ по условию $\Rightarrow$
+	 
+	 \begin{equation*}
+	 \Rightarrow T(\vec{X}, \sigma^2) =  \frac{S^2(\vec{X})}{\sigma^2} (n-1) \sim \chi^2(n-1) 
+	 \end{equation*}
+	 
+	 \begin{equation*}
+	 P \{   h_{\alpha_1} < T(\vec{X}, \sigma^2) < h_{1 - \alpha_2}  \} = \gamma
+	 \end{equation*}
+	 
+	 где $h_{\alpha_1}$, $h_{1 - \alpha_2}$ n квантили соответствующих уровней распределения $\chi^2$ c $n-1=7$
+	 
+	 \begin{equation*}
+	 P \{    \frac{  (n-1) S^2(\vec{X})  }{h_{  \frac{1+\gamma}{2}}} < \sigma^2 < \frac{   (n-1)S^2(\vec{X})    }{ h_{\frac{1-\gamma}{2}}      }    \} = \gamma
+	 \end{equation*}
+	 
+	 \begin{equation*}
+	 \underline{\sigma^2}(\vec{X}) = \frac{(n-1)S^2(\vec{X})}{h_{\frac{1+\gamma}{2}}}
+	 \end{equation*}
+	 
+	 \begin{equation*}
+	 \overline{\sigma^2}(\vec{X}) = \frac{(n-1)S^2(\vec{X})}{h_{\frac{1-\gamma}{2}}}
+	 \end{equation*}
+	  
+	  \begin{equation*}
+	  \textbf{а)}\; S^2(\vec{X}) = 0.0229
+	  \end{equation*}
+	  
+	  \begin{equation*}
+	  \textbf{б)}\; \frac{1+\gamma}{2} = 0.95
+	  \end{equation*}
+	  
+	  \begin{equation*}
+	  \frac{1-\gamma}{2} = 0.05
+	  \end{equation*}
+	  
+	  \begin{equation*}
+	  \textbf{в)}\; h_{0.95} = 14.07
+	  \end{equation*}
+	  
+	  \begin{equation*}
+	  h_{0.05} = 2.17
+	  \end{equation*}
+	  
+	  \begin{equation*}
+	  \textbf{г)}\; \underline{\sigma}^2(\vec{X}) = \frac{  (n-1) S^2(\vec{X})}{  h_{\frac{1+\gamma}{2}}  } = \frac{7 \cdot 0.0229}{14.07} = 0.0114
+	  \end{equation*}
+	  
+	  \begin{equation*}
+	  \overline{\sigma}^2(\vec{X}) = \frac{  (n-1) S^2(\vec{X})}{  h_{\frac{1-\gamma}{2}}  } = \frac{7 \cdot 0.0229}{2.17} = 0.074
+	  \end{equation*}
+	
+	\vspace{0.5cm}
+	\textbf{Ответ:} $\sigma^2 \in (0.0114; 0.074)$
+	
+	
 	
 
 \end{document}
