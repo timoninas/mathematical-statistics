@@ -12,7 +12,7 @@
 | :1234: | Описание | Код | Отчет | :information_source: |
 | --- | --- | --- | --- | --- |
 | :one: | <ol> <li>Гистограмма</li> <li>Эмпирическая функция распределения</li>  </ol> | [Код](https://github.com/timoninas/mathematical-statistics/blob/master/lab_1/src/lab1.m) | [Отчет](https://github.com/timoninas/mathematical-statistics/blob/master/lab_1/lab_1.pdf) | :white_check_mark: |
-| :two: | ЛР2 | [Код]() | [Отчет]() | :negative_squared_cross_mark: |
+| :two: | <ol> <li>Интервальные оценки</li>   </ol> | [Код](https://github.com/timoninas/mathematical-statistics/blob/master/lab_2/src/lab2.m) | [Отчет](https://github.com/timoninas/mathematical-statistics/blob/master/lab_2/lab_2.pdf) | :negative_squared_cross_mark: |
 
 ## Рубежные контроли
 
