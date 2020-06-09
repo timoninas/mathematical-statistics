@@ -6,6 +6,7 @@
 \usepackage{graphicx}
 \usepackage{listings}
 \usepackage{color}
+\usepackage[normalem]{ulem} 
 
 \usepackage{amsfonts}
 \usepackage{amsmath}
@@ -155,24 +156,23 @@ columns=fullflexible }
 	\vspace{0.3cm}Используя статистику
 	
 	\begin{equation*}
-	F = \frac{S^2(\vec{X}_n)}{S^2(\vec{Y}_n)}
+	F(\vec{X}, \vec{Y}) = \frac{S^2(\vec{X})}{S^2(\vec{Y})}
 	\end{equation*}
 	
-	\vspace{0.3cm}со степенями свободы $\partial x = n - 1 = 9$ и $\partial y =  9$
+	\vspace{0.3cm}со степенями свободы $k_1 = k_2 = n - 1 = 9$
 	
-	\vspace{0.3cm}  По таблице Квантилей распределения Фишера находим: $f_{1-\alpha}(9.9) = f_{0.99}(9.9) = 5.35$
+	\vspace{0.3cm}  По таблице квантилей распределения Фишера находим: $f_{1-\alpha}(9,9) = f_{0.995}(9,9) = 6.54$
 	
-	\vspace{0.3cm} Критическое множество имеет вид:
+	\vspace{0.3cm} Критическое множество имеет вид: $W = \{  (\vec{x}, \vec{y}): T(\vec{x}, \vec{y}) = f_{1 - \frac{\alpha}{2}}(k_1, k_2)  \} \Rightarrow$
+
 	
 	\begin{equation*}
-	\frac{S^2(\vec{X}_n)}{S^2(\vec{Y}_n)} \neq 5.35 \Rightarrow \frac{0.72}{0.15} = 4.8 \neq 5.35 \Rightarrow \text{ гипотезу } H_0 \text{ не принимаем, так как } 4.8 \neq 5.35
+	\Rightarrow \frac{S^2(\vec{x_n})}{S^2(\vec{y_n})} = \frac{0.72}{0.15} =  4.8 \le 6.54
 	\end{equation*}
-	
-	
 	
 	\vspace{0.5cm}
 	\textbf{Ответ:}
-	Гипотезу $H_0$ не принимаем, так как $4.8 \neq 5.35$
+	Гипотезу $H_0$ принимаем, так как $4.8 \le 6.54$
 	
 	\newpage
 	
